@@ -1,0 +1,542 @@
+@import 'nib';
+
+
+color = #de2b24
+
+
+html, body
+	width 100%
+	height 100%
+
+body
+	// font-family 'Open Sans', sans-serif
+	color #5b5b5b
+
+
+blockHeader(color)
+	margin-bottom 20px
+
+	h2, p
+		margin 0
+		padding 0
+
+	h2
+		font-size 36px
+		font-weight bold
+		color color
+
+	p
+		font-size 15px
+		font-weight 300
+		color color
+		position relative
+		margin-bottom 15px
+
+		&:after
+			content ''
+			width 40px
+			height 5px
+			background-color color
+			position absolute
+			bottom -15px
+			right 0
+			left 0 
+			margin auto
+
+.cont
+	padding 100px 10px
+
+	.cont-header
+		blockHeader(#424242)
+
+
+header
+	.top
+		background-color #f0f2f4
+		border-bottom 1px solid #e2e2e2
+
+		ul
+			list-style none
+			margin 0
+			padding 0
+
+			li
+				padding 7px 10px
+				line-height 26px
+				font-size 15px
+				float left
+
+				&:last-of-type
+					padding-left 0
+					padding-right 0
+
+				&.brrg
+					border-right 1px solid #e2e2e2
+
+				span.fb
+					display block
+					text-align center
+					width wh = 26px
+					height wh
+					border-radius 4px
+					background-color #1287bf
+					color #fff
+
+	nav
+		transition all .3s
+		padding 40px 10px
+
+		.nav-r
+			line-height 57px
+
+		.logo
+			.left
+				color color
+				padding-right 10px
+
+				i
+					font-size 57px
+
+			.right
+				h2, p
+					margin 0
+					padding 0
+
+				h2
+					font-size 35px
+
+				p
+					font-size 15px
+
+		ul.nav
+			padding 0
+			margin 0
+			margin-right 20px
+			list-style none
+
+			li
+				&.circle
+					font-size 8px
+
+				a
+					text-decoration none
+					font-weight bold
+					color #424242
+					padding 0 10px
+
+					&:hover { color: color; }
+
+		button
+			background color
+			border-radius 4px
+			color #fff
+			height 36px
+			padding 0 23px
+			margin-top 10.5px
+			line-height 36px
+			border none
+			outline none
+
+			&:hover { background: lighten(color, 10%); }
+
+
+section.banner
+	background url('../img/banner.jpg')
+	background-size cover
+
+	.text
+		padding 240px 10px
+		color #fff
+
+		h2, p
+			margin 0
+			padding 0
+			margin-bottom 10px
+
+		h2
+			font-size 40px
+
+		p
+			font-weight 300
+			font-size 30px
+
+		a.main-btn
+			background-color #f8cd53
+			display inline-block
+			border-radius 5px
+			margin-top 20px
+			padding 0 40px
+			text-decoration none
+			color inherit
+			font-weight bold
+			height h = 66px
+			font-size 23px
+			line-height h
+			text-transform uppercase
+
+
+section.about
+	background white
+
+	.item
+		padding-top 15px
+		padding-bottom 15px
+
+		h3
+			margin 15px
+
+		p
+			line-height 1.3em
+
+
+section.approach
+	background #f3f3f3
+
+	.item
+		background-color #fff
+		margin-bottom 40px
+		box-shadow 0 0 10px #ccc
+
+		&:last-of-type
+			margin-bottom 0
+
+		&.left, &.right
+			position relative
+
+		&.left
+			.text
+				text-align left
+
+			.image .step
+				right -52px
+
+		&.right
+			.text
+				text-align right
+
+			.image .step
+				left -52px
+
+
+		.image
+			width 340px
+			height 235px
+			position relative
+
+			img
+				width 100%
+				height 100%
+
+			.step
+				padding-top 17px
+				position absolute
+				text-align center
+				background-color color
+				border 2px solid white
+				border-radius 5px
+				color #fff
+				top 0
+				bottom 0
+				margin auto
+				line-height .7
+				width wh = 100px
+				height wh
+				font-size 30px
+
+				span
+					font-size 50px
+
+		.text
+			width 800px
+			padding 70px
+
+			h4, p
+				margin 0
+				padding 0
+				line-height 1.3em
+
+			h4
+				padding-bottom 10px
+
+
+section.work
+	background color
+
+	.cont-header
+		blockHeader(#fff)
+
+	.items
+
+		.item
+			padding 0
+			height 290px
+
+			.text, .image
+				width 50%
+				float left
+				padding 0
+
+			.image
+				height 100%
+
+				img
+					width 100%
+					height 100%
+
+			.text
+				background #f35e59
+				height 100%
+				font-size 20px
+				display flex
+				justify-content center
+				flex-direction column
+				align-items center
+				color white
+
+				span 
+					font-size 30px
+
+				span, h3, p
+					margin 0
+					padding 0
+
+
+section.contact
+	background blue =#1287bf
+	color #fff
+
+	padding-left
+
+	h2, p
+		margin 0
+		padding 0
+		margin-bottom 10px
+
+	h2
+		font-size 36px
+
+	p
+		font-size 20px
+		font-weight 300
+
+	button
+		width wh = 60px
+		height wh
+		line-height wh - 20px
+		text-align center
+		border 3px solid white
+		background transparent
+		border-radius 50%
+		font-size 40px
+		padding 0
+		margin 0
+
+	#form-show
+		display none
+
+		form
+			position relative
+			margin 60px auto 0
+			max-width 680px
+			color #828282
+			background #fff
+			padding 60px
+
+			&:before
+				content ''
+				position absolute
+				right 0
+				left 0
+				top -35px
+				width 0
+				height 0
+				margin auto
+				bw = 40px 
+				border-bottom bw - 5px solid white
+				border-right bw solid transparent
+				border-left bw solid transparent
+
+			p
+				font-size 15px
+
+			.form-group
+				padding-top 20px
+				padding-bottom 20px
+				max-width 440px
+				margin 0 auto
+
+				input.form-input
+					font inherit
+					display block
+					background white
+					padding 15px 20px
+					width 100%
+					margin-bottom 10px
+					border-radius 4px
+					border 1px solid #d8d8d8
+
+					&:focus
+						border 1px solid #d8d8d8
+						box-shadow 0 0 5px blue
+
+			input[type="submit"]
+				display inline-block
+				background-color color
+				color white
+				text-transform uppercase
+				font inherit
+				font-weight bold
+				border none
+				outline none
+				border-radius 2px
+				padding 15px 30px
+
+				&:hover
+					background-color lighten(color, 10%)
+
+
+footer
+	.getTouch
+		padding-top 60px
+		padding-bottom 60px
+		background-color #2a2a2a
+		color white
+
+		h2
+			font-size 29px
+
+		ul
+			list-style none
+			margin 0
+			padding 0
+
+			li
+				display inline-block
+				margin 10px
+				border 1px solid #515151
+				border-radius 4px
+				text-align center
+				color white
+
+				a
+					width wh = 45px
+					height wh
+					line-height wh
+					display block
+					text-decoration none
+					color inherit
+					font-size 23px
+
+
+				&:hover { border-color: color; }
+
+		p
+			margin-bottom 20px
+
+			&.text
+				color #cecece
+				font-size 14px
+
+		form
+			.form-input
+				background-color #515151
+				padding 20px 23px
+				font inherit
+				font-size 14px
+				line-height 1
+				border none
+				width 100%
+				max-width 680px
+				outline none
+
+			input[type="submit"]
+				display inline-block
+				padding 15px 25px
+				color white
+				font-weight bold
+				background transparent
+				border 1px solid #515151
+				border-radius 4px
+				&:hover { background: #515151; }
+
+
+	.copy
+		padding 20px 0
+		background-color #515151
+		color #cecece
+
+		p
+			margin 0
+			font-size 14px
+
+
+
+
+
+
+
+
+@media screen and (min-width: 0) and (max-width: 768px)
+	// xs
+	// header nav
+	header nav .nav-r
+		line-height 30px
+
+	section.banner .text
+		padding 100px 10px
+
+	section.work .items .item
+		height 200px
+		margin-bottom 20px
+
+	.cont
+		padding 50px 10px
+
+	#form-show form
+		padding 20px !important
+
+
+@media screen and (min-width: 0) and (max-width: 992px)
+	// xs-sm
+
+	section.work .items .item
+		height 250px
+
+	section.approach .item
+		.image
+			width 100%
+			height auto
+
+			.step
+				right 0 !important
+				top auto !important
+				left 0 !important
+				bottom 0 !important
+				margin 0 auto
+
+		.text
+			max-width 100%
+
+@media screen and (min-width: 768px)
+	// sm
+
+
+@media screen and (min-width: 992px)
+	// md
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+	// md
+	section.approach .item
+		// .image
+		.text
+			max-width 597px
+
+@media screen and (min-width: 1200px)
+	// lg
+
+@media screen and (min-width: 1200px) and (max-width: 100%)
+	// lg
+
+
+
+
